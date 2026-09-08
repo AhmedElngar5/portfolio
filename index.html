@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Ahmed Elngar | Backend .NET Developer</title>
+  <meta name="description" content="Ahmed Elngar — Backend .NET Developer and Artificial Intelligence student specializing in C#, .NET, ASP.NET Core, SQL Server, and software development." />
+  <meta name="author" content="Ahmed Elngar" />
+  <meta name="keywords" content="Ahmed Elngar, Backend Developer, .NET Developer, C# Developer, ASP.NET Core, SQL Server, AI Student, Portfolio" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ahmed Elngar | Backend .NET Developer" />
+  <meta property="og:description" content="Backend .NET Developer and Artificial Intelligence student specializing in C#, .NET, ASP.NET Core, SQL Server, and software development." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="#" /> <!-- TODO: Replace with actual URL -->
+
+  <!-- Favicon placeholder -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#home" class="nav-logo">Ahmed<span>.</span></a>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile overlay -->
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-code-bg" id="hero-code-bg" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Open to Opportunities
+        </div>
+
+        <h1 class="hero-name">
+          Ahmed <span class="highlight">Elngar</span>
+        </h1>
+
+        <p class="hero-title">
+          Backend .NET Developer | C# Developer | AI Student<span class="typing-cursor" aria-hidden="true"></span>
+        </p>
+
+        <p class="hero-description">
+          Building reliable backend applications and scalable software solutions with C#, .NET, ASP.NET Core, and SQL Server, while combining software engineering with an Artificial Intelligence background.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            View Projects
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Contact Me
+          </a>
+        </div>
+
+        <div class="hero-socials">
+          <!-- TODO: Replace # with your actual GitHub URL -->
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <!-- TODO: Replace # with your actual LinkedIn URL -->
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <!-- TODO: Replace with your actual email -->
+          <a href="mailto:your.email@example.com" aria-label="Send Email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Terminal decoration -->
+      <div class="hero-visual reveal">
+        <div class="terminal-card">
+          <div class="terminal-header">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+            <span class="terminal-title">ahmed@dev ~ dotnet</span>
+          </div>
+          <div class="terminal-body">
+            <span class="line"><span class="prompt">$</span> <span class="command">dotnet new webapi -n Portfolio.Api</span></span>
+            <span class="line"><span class="comment">// The template "ASP.NET Core Web API" was created</span></span>
+            <span class="line"></span>
+            <span class="line"><span class="prompt">$</span> <span class="command">cd Portfolio.Api</span></span>
+            <span class="line"></span>
+            <span class="line"><span class="keyword">public class</span> <span class="type">Developer</span></span>
+            <span class="line">{</span>
+            <span class="line">    <span class="keyword">public string</span> Name => <span class="string">"Ahmed Elngar"</span>;</span>
+            <span class="line">    <span class="keyword">public string</span> Role => <span class="string">"Backend .NET Dev"</span>;</span>
+            <span class="line">    <span class="keyword">public string[]</span> Stack => <span class="keyword">new</span>[]</span>
+            <span class="line">    {</span>
+            <span class="line">        <span class="string">"C#"</span>, <span class="string">".NET"</span>, <span class="string">"ASP.NET Core"</span>,</span>
+            <span class="line">        <span class="string">"SQL Server"</span>, <span class="string">"EF Core"</span></span>
+            <span class="line">    };</span>
+            <span class="line">    <span class="keyword">public bool</span> OpenToWork => <span class="keyword">true</span>;</span>
+            <span class="line">}</span>
+            <span class="line"></span>
+            <span class="line"><span class="prompt">$</span> <span class="command">dotnet run</span></span>
+            <span class="line"><span class="string">✓ Application started → https://localhost:5001</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">// About Me</span>
+        <h2 class="section-title">Who I Am</h2>
+        <p class="section-subtitle">A brief overview of my background, interests, and what drives me as a developer.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I am an <strong>Artificial Intelligence student</strong> at Delta University for Science and Technology, with a strong focus on <strong>software development</strong> and <strong>backend engineering</strong>.
+          </p>
+          <p>
+            My current career direction is centered on becoming a strong <strong>Backend .NET Developer</strong>, building reliable, scalable, and maintainable applications using <strong>C#, ASP.NET Core, SQL Server</strong>, and modern software engineering practices. I am also working toward eventually becoming a <strong>Full Stack .NET Developer</strong>.
+          </p>
+          <p>
+            I have experience building academic and personal projects involving desktop applications, database systems, web applications, and AI/Machine Learning projects. I work with multiple programming languages and technologies, and I am constantly learning and expanding my skill set.
+          </p>
+
+          <div class="about-highlights">
+            <div class="about-highlight-card reveal reveal-delay-1">
+              <div class="icon">⚙️</div>
+              <h4>Backend Focus</h4>
+              <p>C#, .NET, ASP.NET Core, REST APIs</p>
+            </div>
+            <div class="about-highlight-card reveal reveal-delay-2">
+              <div class="icon">🗃️</div>
+              <h4>Database Engineering</h4>
+              <p>SQL Server, MySQL, Database Design</p>
+            </div>
+            <div class="about-highlight-card reveal reveal-delay-3">
+              <div class="icon">🤖</div>
+              <h4>AI Background</h4>
+              <p>Machine Learning, CNN, Computer Vision</p>
+            </div>
+            <div class="about-highlight-card reveal reveal-delay-4">
+              <div class="icon">🎓</div>
+              <h4>AI Student</h4>
+              <p>Delta University for Science & Technology</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-info reveal">
+          <div class="info-card">
+            <h4>Languages</h4>
+            <div class="tech-list">
+              <span class="tech-tag">C#</span>
+              <span class="tech-tag">C++</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <h4>Frameworks & Tools</h4>
+            <div class="tech-list">
+              <span class="tech-tag">.NET</span>
+              <span class="tech-tag">ASP.NET Core</span>
+              <span class="tech-tag">Entity Framework Core</span>
+              <span class="tech-tag">Windows Forms</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <h4>Databases</h4>
+            <div class="tech-list">
+              <span class="tech-tag">SQL Server</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">SQLite</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <h4>Development Tools</h4>
+            <div class="tech-list">
+              <span class="tech-tag">Git</span>
+              <span class="tech-tag">GitHub</span>
+              <span class="tech-tag">Visual Studio</span>
+              <span class="tech-tag">VS Code</span>
+              <span class="tech-tag">PyCharm</span>
+              <span class="tech-tag">Linux Terminal</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">// Skills</span>
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-subtitle">Technologies and tools I work with to build backend applications and software solutions.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Backend Development -->
+        <div class="skill-category reveal">
+          <div class="skill-category-icon">⚙️</div>
+          <h3>Backend Development</h3>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-dot"></span> C#</div>
+            <div class="skill-item"><span class="skill-dot"></span> .NET</div>
+            <div class="skill-item"><span class="skill-dot"></span> ASP.NET Core</div>
+            <div class="skill-item"><span class="skill-dot"></span> Web API</div>
+            <div class="skill-item"><span class="skill-dot"></span> REST APIs</div>
+            <div class="skill-item"><span class="skill-dot"></span> Object-Oriented Programming</div>
+            <div class="skill-item">
+              <span class="skill-dot"></span> Entity Framework Core
+              <span class="learning-badge">Learning</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="skill-category reveal reveal-delay-1">
+          <div class="skill-category-icon">🗄️</div>
+          <h3>Databases</h3>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-dot"></span> Microsoft SQL Server</div>
+            <div class="skill-item"><span class="skill-dot"></span> MySQL</div>
+            <div class="skill-item"><span class="skill-dot"></span> SQLite</div>
+            <div class="skill-item"><span class="skill-dot"></span> SQL</div>
+            <div class="skill-item"><span class="skill-dot"></span> Database Design</div>
+            <div class="skill-item"><span class="skill-dot"></span> CRUD Operations</div>
+            <div class="skill-item"><span class="skill-dot"></span> Relational Databases</div>
+          </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="skill-category reveal reveal-delay-2">
+          <div class="skill-category-icon">🎨</div>
+          <h3>Frontend</h3>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-dot"></span> HTML5</div>
+            <div class="skill-item"><span class="skill-dot"></span> CSS3</div>
+            <div class="skill-item"><span class="skill-dot"></span> JavaScript</div>
+            <div class="skill-item"><span class="skill-dot"></span> Responsive Web Design</div>
+          </div>
+        </div>
+
+        <!-- Programming Languages -->
+        <div class="skill-category reveal">
+          <div class="skill-category-icon">💻</div>
+          <h3>Programming</h3>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-dot"></span> C#</div>
+            <div class="skill-item"><span class="skill-dot"></span> C++</div>
+            <div class="skill-item"><span class="skill-dot"></span> Python</div>
+          </div>
+        </div>
+
+        <!-- AI / ML -->
+        <div class="skill-category reveal reveal-delay-1">
+          <div class="skill-category-icon">🧠</div>
+          <h3>AI / Machine Learning</h3>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-dot"></span> Python</div>
+            <div class="skill-item"><span class="skill-dot"></span> Machine Learning</div>
+            <div class="skill-item"><span class="skill-dot"></span> Computer Vision</div>
+            <div class="skill-item"><span class="skill-dot"></span> CNN</div>
+            <div class="skill-item"><span class="skill-dot"></span> NumPy</div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-category reveal reveal-delay-2">
+          <div class="skill-category-icon">🛠️</div>
+          <h3>Tools</h3>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-dot"></span> Git</div>
+            <div class="skill-item"><span class="skill-dot"></span> GitHub</div>
+            <div class="skill-item"><span class="skill-dot"></span> Visual Studio</div>
+            <div class="skill-item"><span class="skill-dot"></span> VS Code</div>
+            <div class="skill-item"><span class="skill-dot"></span> PyCharm</div>
+            <div class="skill-item"><span class="skill-dot"></span> Linux Terminal</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">// Experience</span>
+        <h2 class="section-title">Training & Experience</h2>
+        <p class="section-subtitle">Relevant training programs and development experience.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <span class="timeline-badge badge-training">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 6 3 12 0v-5"/></svg>
+            Training
+          </span>
+          <div class="timeline-card">
+            <h3>Digital Egypt Pioneers Initiative (DEPI)</h3>
+            <p class="role">Full Stack .NET Trainee</p>
+            <p class="description">
+              Comprehensive training program covering full stack .NET development, from backend engineering with C# and ASP.NET Core to database management with SQL Server. Focused on building real-world software engineering skills including version control, clean code practices, and web development.
+            </p>
+            <div class="timeline-tech">
+              <span class="tech-tag">C#</span>
+              <span class="tech-tag">.NET</span>
+              <span class="tech-tag">ASP.NET Core</span>
+              <span class="tech-tag">SQL Server</span>
+              <span class="tech-tag">Git</span>
+              <span class="tech-tag">Software Engineering</span>
+              <span class="tech-tag">Web Development</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">// Projects</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">A collection of academic and personal projects showcasing my development skills.</p>
+      </div>
+
+      <!-- Filters -->
+      <div class="project-filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="dotnet">.NET / C#</button>
+        <button class="filter-btn" data-filter="database">Database</button>
+        <button class="filter-btn" data-filter="ai">AI / ML</button>
+        <button class="filter-btn" data-filter="cpp">C++</button>
+      </div>
+
+      <!-- Project Grid -->
+      <div class="projects-grid" id="projects-grid"></div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">// Education</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+
+      <div class="education-card reveal">
+        <div class="education-icon">🎓</div>
+        <h3>Delta University for Science and Technology</h3>
+        <p class="faculty">Faculty of Artificial Intelligence</p>
+        <p class="degree">Bachelor's Degree in Artificial Intelligence</p>
+        <div class="education-status">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          In Progress
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CAREER FOCUS ===== -->
+  <section class="section" id="career">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">// Career Direction</span>
+        <h2 class="section-title">What I'm Building Toward</h2>
+        <p class="section-subtitle">My areas of focus and the direction I am growing as a developer.</p>
+      </div>
+
+      <div class="career-grid">
+        <div class="career-card reveal">
+          <div class="career-icon">⚙️</div>
+          <h3>Backend Engineering</h3>
+          <p>Building strong backend systems and APIs with a focus on reliability, scalability, and clean architecture.</p>
+          <div class="career-tech-list">
+            <span class="tech-tag">C#</span>
+            <span class="tech-tag">.NET</span>
+            <span class="tech-tag">ASP.NET Core</span>
+            <span class="tech-tag">SQL Server</span>
+            <span class="tech-tag">REST APIs</span>
+          </div>
+        </div>
+
+        <div class="career-card reveal reveal-delay-1">
+          <div class="career-icon">🌐</div>
+          <h3>Full Stack Development</h3>
+          <p>Expanding my capabilities toward full stack development by combining backend expertise with frontend technologies.</p>
+          <div class="career-tech-list">
+            <span class="tech-tag">.NET Backend</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Frontend</span>
+            <span class="tech-tag">Databases</span>
+            <span class="tech-tag">APIs</span>
+          </div>
+        </div>
+
+        <div class="career-card reveal reveal-delay-2">
+          <div class="career-icon">🧠</div>
+          <h3>Artificial Intelligence</h3>
+          <p>Continuing to develop knowledge in machine learning, computer vision, and AI systems as part of my academic background.</p>
+          <div class="career-tech-list">
+            <span class="tech-tag">Machine Learning</span>
+            <span class="tech-tag">Computer Vision</span>
+            <span class="tech-tag">CNN</span>
+            <span class="tech-tag">Python</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">// Contact</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Interested in working together or have a question? Feel free to reach out.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>Let's Connect</h3>
+          <p>
+            I am currently open to internship opportunities, junior backend .NET positions, freelance work, and collaborations. If you have a project in mind or just want to say hello, don't hesitate to reach out.
+          </p>
+
+          <div class="contact-methods">
+            <!-- TODO: Replace with your actual email -->
+            <a href="mailto:your.email@example.com" class="contact-method">
+              <div class="method-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <span class="method-label">Email</span>
+                <span class="method-value">your.email@example.com</span> <!-- TODO: Replace -->
+              </div>
+            </a>
+            <!-- TODO: Replace # with your actual LinkedIn URL -->
+            <a href="#" target="_blank" rel="noopener noreferrer" class="contact-method">
+              <div class="method-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </div>
+              <div>
+                <span class="method-label">LinkedIn</span>
+                <span class="method-value">linkedin.com/in/ahmed-elngar</span> <!-- TODO: Replace -->
+              </div>
+            </a>
+            <!-- TODO: Replace # with your actual GitHub URL -->
+            <a href="#" target="_blank" rel="noopener noreferrer" class="contact-method">
+              <div class="method-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </div>
+              <div>
+                <span class="method-label">GitHub</span>
+                <span class="method-value">github.com/AhmedElngar5</span> <!-- TODO: Replace -->
+              </div>
+            </a>
+            <!-- TODO: Replace with your actual phone number -->
+            <div class="contact-method">
+              <div class="method-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <span class="method-label">Phone</span>
+                <span class="method-value">+20 XXX XXX XXXX</span> <!-- TODO: Replace -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper reveal">
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="contact-name">Full Name</label>
+              <input type="text" id="contact-name" name="name" placeholder="Your name" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email Address</label>
+              <input type="email" id="contact-email" name="email" placeholder="your@email.com" required autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" placeholder="Tell me about your project or opportunity..." required></textarea>
+            </div>
+            <button type="submit" class="form-submit">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle;margin-right:6px;"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Send Message
+            </button>
+            <p class="form-note">
+              This form opens your email client. For direct contact, use the email address listed above.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>Ahmed<span>.</span> Elngar</h3>
+          <p>Backend .NET Developer | C# Developer | AI Student</p>
+        </div>
+
+        <div class="footer-socials">
+          <!-- TODO: Replace # with actual URLs -->
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:your.email@example.com" aria-label="Email"> <!-- TODO: Replace -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> Ahmed Elngar. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== LIGHTBOX ===== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close image viewer">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous image">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <img class="lightbox-image" id="lightbox-img" src="" alt="Project image" />
+    <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next image">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+    <span class="lightbox-counter" id="lightbox-counter">1 / 7</span>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
