@@ -104,8 +104,8 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 ## 📬 Contact
 
-- **Email**: [your.email@example.com](mailto:your.email@example.com)
-- **LinkedIn**: [linkedin.com/in/ahmed-elngar](#)
+- **Email**: [ahmedengar205@gmail.com)
+- **LinkedIn**: [www.linkedin.com/in/ahmed-elngar-3251b5375]
 - **GitHub**: [github.com/AhmedElngar5](#)
 
 ---
