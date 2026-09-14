@@ -12,7 +12,7 @@ const projects = [
     description: "Graduation project combining Artificial Intelligence, web development, mobile development, and backend engineering to build an AI-based child family reunification and alternative care support system.",
     image: "projects/wasel-graduation.jpg",
     technologies: ["AI", "Machine Learning", "Web Development", "Mobile", "Backend"],
-    github: "#", // TODO: Replace with actual GitHub URL
+    github: "https://github.com/AhmedElngar5",
     demo: null,
     category: ["ai"],
     badge: "Graduation Project"
@@ -22,7 +22,7 @@ const projects = [
     description: "A desktop application for managing contacts and database records with full CRUD operations, built using C# and Windows Forms with MySQL database integration.",
     image: "projects/contact-management.jpg",
     technologies: ["C#", "OOP", "SQL", "MySQL", "Windows Forms"],
-    github: "#", // TODO: Replace with actual GitHub URL
+    github: "https://github.com/AhmedElngar5",
     demo: null,
     category: ["dotnet", "database"]
   },
@@ -31,7 +31,7 @@ const projects = [
     description: "A database-driven management system for handling hospital operations including patient records, departments, and medical data management.",
     image: "projects/hospital-management.jpg",
     technologies: ["C#", "SQL", "MySQL", "Database Design"],
-    github: "#", // TODO: Replace with actual GitHub URL
+    github: "https://github.com/AhmedElngar5",
     demo: null,
     category: ["dotnet", "database"]
   },
@@ -40,7 +40,7 @@ const projects = [
     description: "A database application for managing factory-related data including production records, inventory, and operational workflows.",
     image: "projects/factory-management.jpg",
     technologies: ["C#", "SQL", "MySQL"],
-    github: "#", // TODO: Replace with actual GitHub URL
+    github: "https://github.com/AhmedElngar5",
     demo: null,
     category: ["dotnet", "database"]
   },
@@ -49,7 +49,7 @@ const projects = [
     description: "A database application for managing company information including employee records, departments, and organizational data.",
     image: "projects/company-management.jpg",
     technologies: ["C#", "SQL", "MySQL"],
-    github: "#", // TODO: Replace with actual GitHub URL
+    github: "https://github.com/AhmedElngar5",
     demo: null,
     category: ["dotnet", "database"]
   },
@@ -58,7 +58,7 @@ const projects = [
     description: "A database management application for handling student records, class schedules, grades, and school administrative operations.",
     image: "projects/school-management.jpg",
     technologies: ["C#", "SQL", "MySQL"],
-    github: "#", // TODO: Replace with actual GitHub URL
+    github: "https://github.com/AhmedElngar5",
     demo: null,
     category: ["dotnet", "database"]
   },
@@ -67,7 +67,7 @@ const projects = [
     description: "A Pacman game project built with C++ featuring classic gameplay mechanics, ghost AI behavior, and score tracking.",
     image: "projects/pacman-game.jpg",
     technologies: ["C++", "Game Programming"],
-    github: "#", // TODO: Replace with actual GitHub URL
+    github: "https://github.com/AhmedElngar5",
     demo: null,
     category: ["cpp"]
   }

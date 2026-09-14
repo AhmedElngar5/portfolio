@@ -48,7 +48,6 @@ portfolio/
 │   ├── school-management.jpg
 │   ├── pacman-game.jpg
 │   └── wasel-graduation.jpg
-└── assets/             # Additional assets
 ```
 
 ## 🚀 Getting Started
@@ -106,7 +105,7 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 - **Email**: [ahmedengar205@gmail.com](mailto:ahmedengar205@gmail.com)
 - **LinkedIn**: [linkedin.com/in/ahmed-elngar-3251b5375](https://www.linkedin.com/in/ahmed-elngar-3251b5375)
-- **GitHub**: [github.com/AhmedElngar5](#)
+- **GitHub**: [github.com/AhmedElngar5](https://github.com/AhmedElngar5)
 
 ---
 
