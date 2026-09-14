@@ -430,8 +430,7 @@ function initContactForm() {
     // Mailto fallback
     const subject = encodeURIComponent(`Portfolio Contact from ${name}`);
     const body    = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
-    // TODO: Replace with your actual email address
-    const mailto  = `mailto:your.email@example.com?subject=${subject}&body=${body}`;
+    const mailto  = `mailto:ahmedengar205@gmail.com?subject=${subject}&body=${body}`;
 
     window.location.href = mailto;
   });
