@@ -89,6 +89,7 @@ const lightboxCounter = document.getElementById('lightbox-counter');
 const contactForm     = document.getElementById('contact-form');
 const yearSpan        = document.getElementById('current-year');
 const themeToggle     = document.getElementById('theme-toggle');
+const themeIcon       = document.getElementById('theme-icon');
 
 /* ---------- State ---------- */
 let currentLightboxIndex = 0;
@@ -176,6 +177,7 @@ function applyTheme(theme) {
   localStorage.setItem('portfolio-theme', theme);
 
   const isLight = theme === 'light';
+  themeIcon.textContent = isLight ? '☾' : '☀';
   themeToggle.setAttribute('aria-pressed', String(isLight));
   themeToggle.setAttribute('aria-label', isLight ? 'Switch to dark mode' : 'Switch to light mode');
   themeToggle.setAttribute('title', isLight ? 'Switch to dark mode' : 'Switch to light mode');

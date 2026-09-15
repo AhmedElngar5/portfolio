@@ -293,18 +293,6 @@ html[data-theme="light"] .navbar.scrolled {
   line-height: 1;
 }
 
-.theme-icon-moon {
-  display: none;
-}
-
-html[data-theme="light"] .theme-icon-sun {
-  display: none;
-}
-
-html[data-theme="light"] .theme-icon-moon {
-  display: inline;
-}
-
 /* Hamburger */
 .hamburger {
   display: none;

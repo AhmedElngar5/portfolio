@@ -20,7 +20,7 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css?v=theme-toggle" />
 </head>
 <body>
 
@@ -41,8 +41,7 @@
       </div>
 
       <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false" title="Switch to light mode">
-        <span class="theme-icon theme-icon-sun" aria-hidden="true">☀</span>
-        <span class="theme-icon theme-icon-moon" aria-hidden="true">☾</span>
+        <span class="theme-icon" id="theme-icon" aria-hidden="true">☀</span>
       </button>
 
       <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
