@@ -88,6 +88,7 @@ const lightboxNext    = document.getElementById('lightbox-next');
 const lightboxCounter = document.getElementById('lightbox-counter');
 const contactForm     = document.getElementById('contact-form');
 const yearSpan        = document.getElementById('current-year');
+const themeToggle     = document.getElementById('theme-toggle');
 
 /* ---------- State ---------- */
 let currentLightboxIndex = 0;
@@ -99,6 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
   renderProjects();
   initNavbar();
   initMobileMenu();
+  initThemeToggle();
   initSmoothScroll();
   initScrollReveal();
   initContactForm();
@@ -152,6 +154,31 @@ function updateActiveNavLink() {
       link.classList.add('active');
     }
   });
+}
+
+/* =============================================
+   THEME TOGGLE
+   ============================================= */
+function initThemeToggle() {
+  if (!themeToggle) return;
+
+  const savedTheme = localStorage.getItem('portfolio-theme');
+  applyTheme(savedTheme || 'dark');
+
+  themeToggle.addEventListener('click', () => {
+    const nextTheme = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+    applyTheme(nextTheme);
+  });
+}
+
+function applyTheme(theme) {
+  document.documentElement.dataset.theme = theme;
+  localStorage.setItem('portfolio-theme', theme);
+
+  const isLight = theme === 'light';
+  themeToggle.setAttribute('aria-pressed', String(isLight));
+  themeToggle.setAttribute('aria-label', isLight ? 'Switch to dark mode' : 'Switch to light mode');
+  themeToggle.setAttribute('title', isLight ? 'Switch to dark mode' : 'Switch to light mode');
 }
 
 /* =============================================

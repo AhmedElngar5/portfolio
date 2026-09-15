@@ -57,6 +57,31 @@
   --shadow-glow: 0 0 30px var(--accent-glow);
 }
 
+html[data-theme="light"] {
+  --bg-primary:    #f7f8fc;
+  --bg-secondary:  #eef0f6;
+  --bg-tertiary:   #e5e7ef;
+  --bg-card:       #ffffff;
+  --bg-card-hover: #f2f3fa;
+
+  --text-primary:   #171827;
+  --text-secondary: #555b70;
+  --text-muted:     #73798b;
+
+  --accent:         #5148d9;
+  --accent-light:   #6259e8;
+  --accent-dark:    #3c34b4;
+  --accent-glow:    rgba(81, 72, 217, 0.12);
+  --accent-glow-strong: rgba(81, 72, 217, 0.22);
+
+  --border:        rgba(23, 24, 39, 0.1);
+  --border-hover:  rgba(23, 24, 39, 0.18);
+
+  --shadow-sm:  0 1px 3px rgba(23, 24, 39, 0.1);
+  --shadow-md:  0 4px 20px rgba(23, 24, 39, 0.12);
+  --shadow-lg:  0 8px 40px rgba(23, 24, 39, 0.16);
+}
+
 /* ---------- Reduced Motion ---------- */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
@@ -87,6 +112,7 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.35s var(--ease-out), color 0.35s var(--ease-out);
 }
 
 body.no-scroll {
@@ -183,6 +209,11 @@ button {
   border-bottom: 1px solid var(--border);
 }
 
+html[data-theme="light"] .navbar.scrolled {
+  background: rgba(247, 248, 252, 0.92);
+  box-shadow: 0 1px 20px rgba(23, 24, 39, 0.1);
+}
+
 .navbar .container {
   display: flex;
   align-items: center;
@@ -235,6 +266,43 @@ button {
   height: 2px;
   background: var(--accent);
   border-radius: 2px;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-left: 12px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--text-secondary);
+  font-size: 1.15rem;
+  transition: color 0.25s var(--ease-out), background 0.25s var(--ease-out), border-color 0.25s var(--ease-out), transform 0.25s var(--ease-out);
+}
+
+.theme-toggle:hover {
+  color: var(--accent);
+  background: var(--accent-glow);
+  border-color: var(--accent);
+  transform: rotate(12deg);
+}
+
+.theme-icon {
+  line-height: 1;
+}
+
+.theme-icon-moon {
+  display: none;
+}
+
+html[data-theme="light"] .theme-icon-sun {
+  display: none;
+}
+
+html[data-theme="light"] .theme-icon-moon {
+  display: inline;
 }
 
 /* Hamburger */
@@ -763,6 +831,65 @@ button {
 .usp-card-ar .usp-copy-label {
   letter-spacing: 0;
   text-transform: none;
+}
+
+.usp-values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.usp-value-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  min-height: 148px;
+  padding: 22px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  transition: border-color 0.3s var(--ease-out), transform 0.3s var(--ease-out);
+}
+
+.usp-value-card:hover {
+  border-color: rgba(108, 99, 255, 0.3);
+  transform: translateY(-3px);
+}
+
+.usp-value-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  border-radius: var(--radius-sm);
+  background: var(--accent-glow);
+  color: var(--accent-light);
+  font-family: var(--font-mono);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.usp-value-card h3 {
+  margin-bottom: 3px;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.usp-value-card span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--accent);
+  font-size: 0.8rem;
+}
+
+.usp-value-card p {
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  line-height: 1.6;
 }
 
 .tech-tag {
@@ -1658,6 +1785,10 @@ button {
     grid-template-columns: 1fr;
   }
 
+  .usp-values {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1679,6 +1810,11 @@ button {
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
+  }
+
+  .theme-toggle {
+    margin-left: auto;
+    margin-right: 10px;
   }
 
   .nav-links {
@@ -1780,6 +1916,10 @@ button {
   }
 
   .about-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .usp-values {
     grid-template-columns: 1fr;
   }
 
