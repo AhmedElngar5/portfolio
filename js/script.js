@@ -449,6 +449,7 @@ function initContactForm() {
   const messageInput = contactForm.querySelector('#contact-message');
   const emailError = contactForm.querySelector('#contact-email-error');
   const formStatus = contactForm.querySelector('#contact-form-status');
+  const submitButton = contactForm.querySelector('.form-submit');
 
   const clearEmailError = () => {
     emailInput.setAttribute('aria-invalid', 'false');
@@ -487,13 +488,28 @@ function initContactForm() {
     const body    = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
     const mailto  = `mailto:ahmedengar205@gmail.com?subject=${subject}&body=${body}`;
 
-    formStatus.textContent = 'Your message is ready. Choose your email app to send it, or use the link below.';
+    submitButton.disabled = true;
+    submitButton.classList.add('is-sending');
+    formStatus.className = 'form-status is-sending';
+    formStatus.textContent = 'Sending your message...';
+
     const fallbackLink = document.createElement('a');
     fallbackLink.href = mailto;
     fallbackLink.textContent = 'Open email draft';
     fallbackLink.className = 'form-status-link';
-    formStatus.append(' ', fallbackLink);
-    window.open(mailto, '_blank');
+
+    // Open the draft without navigating away from the portfolio page.
+    const emailWindow = window.open(mailto, '_blank');
+
+    window.setTimeout(() => {
+      submitButton.disabled = false;
+      submitButton.classList.remove('is-sending');
+      formStatus.className = 'form-status is-sent';
+      formStatus.textContent = emailWindow
+        ? 'Your message is ready in your email app. You are back on the portfolio page.'
+        : 'Your message is ready. Click ';
+      formStatus.append(' ', fallbackLink);
+    }, 1800);
   });
 }
 

@@ -1663,6 +1663,20 @@ html[data-theme="light"] .navbar.scrolled {
   box-shadow: 0 4px 20px rgba(108,99,255,0.3);
 }
 
+.form-submit.is-sending {
+  cursor: wait;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.form-status.is-sending {
+  color: var(--accent);
+}
+
+.form-status.is-sent {
+  color: var(--success);
+}
+
 /* =============================================
    FOOTER
    ============================================= */
