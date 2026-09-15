@@ -444,24 +444,56 @@ function initScrollRevealForNew() {
 function initContactForm() {
   if (!contactForm) return;
 
+  const nameInput = contactForm.querySelector('#contact-name');
+  const emailInput = contactForm.querySelector('#contact-email');
+  const messageInput = contactForm.querySelector('#contact-message');
+  const emailError = contactForm.querySelector('#contact-email-error');
+  const formStatus = contactForm.querySelector('#contact-form-status');
+
+  const clearEmailError = () => {
+    emailInput.setAttribute('aria-invalid', 'false');
+    emailError.textContent = '';
+  };
+
+  emailInput.addEventListener('input', clearEmailError);
+
   contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    const name    = contactForm.querySelector('#contact-name').value.trim();
-    const email   = contactForm.querySelector('#contact-email').value.trim();
-    const message = contactForm.querySelector('#contact-message').value.trim();
+    const name    = nameInput.value.trim();
+    const email   = emailInput.value.trim();
+    const message = messageInput.value.trim();
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+    formStatus.textContent = '';
+    clearEmailError();
 
     if (!name || !email || !message) {
-      alert('Please fill in all fields.');
+      formStatus.textContent = 'Please fill in all fields before sending your message.';
+      if (!name) nameInput.focus();
+      else if (!email) emailInput.focus();
+      else messageInput.focus();
       return;
     }
 
-    // Mailto fallback
+    if (!emailPattern.test(email)) {
+      emailInput.setAttribute('aria-invalid', 'true');
+      emailError.textContent = 'Please enter a valid email address, such as name@example.com.';
+      emailInput.focus();
+      return;
+    }
+
     const subject = encodeURIComponent(`Portfolio Contact from ${name}`);
     const body    = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
     const mailto  = `mailto:ahmedengar205@gmail.com?subject=${subject}&body=${body}`;
 
-    window.location.href = mailto;
+    formStatus.textContent = 'Your message is ready. Choose your email app to send it, or use the link below.';
+    const fallbackLink = document.createElement('a');
+    fallbackLink.href = mailto;
+    fallbackLink.textContent = 'Open email draft';
+    fallbackLink.className = 'form-status-link';
+    formStatus.append(' ', fallbackLink);
+    window.open(mailto, '_blank');
   });
 }
 

@@ -614,14 +614,15 @@
         </div>
 
         <div class="contact-form-wrapper reveal">
-          <form class="contact-form" id="contact-form">
+          <form class="contact-form" id="contact-form" novalidate>
             <div class="form-group">
               <label for="contact-name">Full Name</label>
               <input type="text" id="contact-name" name="name" placeholder="Your name" required autocomplete="name" />
             </div>
             <div class="form-group">
               <label for="contact-email">Email Address</label>
-              <input type="email" id="contact-email" name="email" placeholder="your@email.com" required autocomplete="email" />
+              <input type="email" id="contact-email" name="email" placeholder="your@email.com" required autocomplete="email" aria-describedby="contact-email-error" />
+              <p class="field-error" id="contact-email-error" role="alert"></p>
             </div>
             <div class="form-group">
               <label for="contact-message">Message</label>
@@ -632,8 +633,9 @@
               Send Message
             </button>
             <p class="form-note">
-              This form opens your email client. For direct contact, use the email address listed above.
+              Your message details will be added to an email addressed to Ahmed. This form opens your email client to send it.
             </p>
+            <p class="form-status" id="contact-form-status" role="status" aria-live="polite"></p>
           </form>
         </div>
       </div>

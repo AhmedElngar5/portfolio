@@ -1607,6 +1607,31 @@ html[data-theme="light"] .navbar.scrolled {
   color: var(--text-muted);
 }
 
+.form-group input[aria-invalid="true"] {
+  border-color: #ef6b73;
+  box-shadow: 0 0 0 3px rgba(239, 107, 115, 0.12);
+}
+
+.field-error {
+  min-height: 0;
+  margin-top: 6px;
+  color: #d94d5a;
+  font-size: 0.78rem;
+}
+
+.form-status {
+  min-height: 0;
+  margin-top: 10px;
+  color: var(--success);
+  font-size: 0.8rem;
+}
+
+.form-status-link {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 .form-group textarea {
   min-height: 140px;
   resize: vertical;
