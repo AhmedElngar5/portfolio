@@ -676,6 +676,95 @@ button {
   gap: 8px;
 }
 
+/* =============================================
+   USP
+   ============================================= */
+.usp-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.usp-card {
+  padding: 30px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  transition: border-color 0.3s var(--ease-out), transform 0.3s var(--ease-out), box-shadow 0.3s var(--ease-out);
+}
+
+.usp-card:hover {
+  border-color: rgba(108, 99, 255, 0.35);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-glow);
+}
+
+.usp-card-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 22px;
+  margin-bottom: 22px;
+  border-bottom: 1px solid var(--border);
+}
+
+.usp-card-ar .usp-card-heading {
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+
+.usp-icon {
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 46px;
+  background: var(--accent-glow);
+  border: 1px solid rgba(108, 99, 255, 0.2);
+  border-radius: var(--radius-md);
+  color: var(--accent-light);
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.usp-language,
+.usp-copy-label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+
+.usp-card h3 {
+  color: var(--text-primary);
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.usp-copy p {
+  color: var(--text-secondary);
+  font-size: 0.98rem;
+  line-height: 1.8;
+}
+
+.usp-copy .usp-short {
+  margin-bottom: 24px;
+  color: var(--text-primary);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.usp-card-ar .usp-language,
+.usp-card-ar .usp-copy-label {
+  letter-spacing: 0;
+  text-transform: none;
+}
+
 .tech-tag {
   display: inline-block;
   padding: 5px 14px;
@@ -1563,6 +1652,10 @@ button {
   .about-grid {
     grid-template-columns: 1fr;
     gap: 36px;
+  }
+
+  .usp-grid {
+    grid-template-columns: 1fr;
   }
 
   .skills-grid {
